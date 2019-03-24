@@ -27,8 +27,8 @@ typedef struct move_list {
 
 int minimax(int, bool, int, int, Move *, int *);
 
-#define MOVE_TIME_LIMIT 30.0 /* Maximum time the computer's moves are allowed to take */
-#define TOTAL_TIME_LIMIT (60.0*game.dimension/2.0) /* Max total time the computer's moves can take */
+#define MOVE_TIME_LIMIT 30.0 /* Maximum time limit for each of the player-computer's moves */
+#define TOTAL_TIME_LIMIT (60.0*game.dimension/2.0) /* Maximum total time for all of the player-computer's moves */
 #define TIME_THRESHOLD 20.0 /* Determines when the computer will start playing very quickly */
 
 #define calc_time(a) ((double) (clock() - (a)) / CLOCKS_PER_SEC)
