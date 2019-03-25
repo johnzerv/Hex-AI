@@ -315,7 +315,7 @@ int cont(char **directive, Move *current_move) {
     max_time = optimal_time_limit(total_time_elapsed);
     timer = clock();
 
-    /* Iterative deepening search is applied on top of minimax */
+    /* Iterative deepening is applied on top of minimax */
     int max_difficulty = game.difficulty;
     for(game.difficulty = 1; game.difficulty <= max_difficulty; game.difficulty++) {
       int eval = 0;
@@ -373,7 +373,7 @@ int suggest(char **directive) {
   max_time = MOVE_TIME_LIMIT;
   timer = clock();
 
-  /* Iterative deepening search is applied on top of minimax */
+  /* Iterative deepening is applied on top of minimax */
   int max_difficulty = game.difficulty;
   for(game.difficulty = 1; game.difficulty <= max_difficulty; game.difficulty++) {
     int eval = 0;
