@@ -72,7 +72,7 @@ the width/height of the hex grid (always available).
 • swap
 
 The swap rule is applied (available during the second move, only if it's the user's turn
-and it's active).
+and the rule is active).
 
 • save <statefile>
 
