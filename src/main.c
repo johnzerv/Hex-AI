@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
   srand(2); /* A constant seed is used in order for the games to be able to be reproduced */
 
   /* The program never exits this loop: it either terminates when the */
-  /* directive "quit" is given or when an error happens (eg. malloc error) */
+  /* "quit" directive is given or when an error occurs (eg. malloc error) */
   while(TRUE) {
     print_current_player();
     process(next_directive());
